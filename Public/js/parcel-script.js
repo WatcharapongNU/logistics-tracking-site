@@ -1,7 +1,7 @@
-import { statusStyle } from "./status.js";
+import { statusStyle } from "/logistics-tracking-site/Public/js/status.js";
 
 async function getParcels() {
-  const res = await fetch("./../../Database/parcels.json");
+  const res = await fetch("/logistics-tracking-site/Database/parcels.json");
   return await res.json();
 }
 
@@ -10,7 +10,7 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("empName");
   localStorage.removeItem("empRole");
   localStorage.removeItem("empId");
-  window.location.href = "/Views/sign-in.html";
+  window.location.href = "/logistics-tracking-site/Views/sign-in.html";
 });
 
 const popup = document.getElementById("popupModal");

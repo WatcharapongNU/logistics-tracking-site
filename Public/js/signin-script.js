@@ -10,14 +10,14 @@ signInForm.addEventListener("submit", async (event) => {
   const role = document.getElementById("role").value.trim();
 
   if (role === "employee") {
-    window.location.href = "/Views/employee/parcel.html";
+    window.location.href = "/logistics-tracking-site/Views/employee/parcel.html";
   }
 
   if (role === "manager") {
-    window.location.href = "/Views/manager/dashboard.html";
+    window.location.href = "/logistics-tracking-site/Views/manager/dashboard.html";
   }
 
   if (role === "driver") {
-    window.location.href = "/Views/driver/tracking.html";
+    window.location.href = "/logistics-tracking-site/Views/driver/tracking.html";
   }
 });

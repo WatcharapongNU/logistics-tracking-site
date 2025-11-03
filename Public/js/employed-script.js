@@ -1,5 +1,5 @@
 async function getEmployees() {
-  const res = await fetch("./../../Database/employeees.json");
+  const res = await fetch("/logistics-tracking-site/Database/employeees.json");
   return await res.json();
 }
 
@@ -8,7 +8,7 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("empName");
   localStorage.removeItem("empRole");
   localStorage.removeItem("empId");
-  window.location.href = "/Views/sign-in.html";
+  window.location.href = "/logistics-tracking-site/Views/sign-in.html";
 });
 
 const popup = document.getElementById("popupModal");

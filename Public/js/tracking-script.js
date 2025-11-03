@@ -62,7 +62,7 @@ form.addEventListener("submit", async function (event) {
   }
 
   try {
-    const res = await fetch("./../../Database/parcel_logs.json");
+    const res = await fetch("/logistics-tracking-site/Database/parcel_logs.json");
 
     const results = await res.json();
 

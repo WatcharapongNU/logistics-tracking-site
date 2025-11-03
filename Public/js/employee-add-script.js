@@ -1,4 +1,4 @@
-import { setupEmployeeHeader } from "./employee-common.js";
+import { setupEmployeeHeader } from "/logistics-tracking-site/Public/js/employee-common.js";
 
 setupEmployeeHeader();
 
@@ -113,5 +113,5 @@ document
     const data = await insertParcel(payload);
     alert(data.message);
     document.getElementById("form-panel").reset();
-    window.location.href = "/Views/employee/parcel.html";
+    window.location.href = "/logistics-tracking-site/Views/employee/parcel.html";
   });

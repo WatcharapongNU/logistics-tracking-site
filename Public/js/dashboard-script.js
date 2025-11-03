@@ -1,12 +1,12 @@
-import { actionStyle } from "./action.js";
+import { actionStyle } from "/logistics-tracking-site/Public/js/action.js";
 
 async function getParcelLogs() {
-  const res = await fetch("./../../Database/parcel_logs.json");
+  const res = await fetch("/logistics-tracking-site/Database/parcel_logs.json");
   return await res.json();
 }
 
 async function getParcels() {
-  const res = await fetch("./../../Database/parcels.json");
+  const res = await fetch("/logistics-tracking-site/Database/parcels.json");
   return await res.json();
 }
 
@@ -15,7 +15,7 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("empName");
   localStorage.removeItem("empRole");
   localStorage.removeItem("empId");
-  window.location.href = "/Views/sign-in.html";
+  window.location.href = "/logistics-tracking-site/Views/sign-in.html";
 });
 
 function statusLabel(status) {
@@ -41,7 +41,7 @@ function statusIcons(status) {
 }
 
 async function renderParcelStat() {
-  const res = await fetch("./../../Database/stat.json");
+  const res = await fetch("/logistics-tracking-site/Database/stat.json");
   const stats = await res.json();
 
   const parcelStat = document.getElementById("parcel-stat");

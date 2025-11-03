@@ -1,10 +1,10 @@
-import { statusStyle } from "./status.js";
-import { setupEmployeeHeader } from "./employee-common.js";
+import { statusStyle } from "/logistics-tracking-site/Public/js/status.js";
+import { setupEmployeeHeader } from "/logistics-tracking-site/Public/js/employee-common.js";
 
 setupEmployeeHeader();
 
 async function getParcels() {
-  const res = await fetch("./../../Database/parcels.json");
+  const res = await fetch("/logistics-tracking-site/Database/parcels.json");
   return await res.json();
 }
 

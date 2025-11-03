@@ -1,23 +1,23 @@
-import { routeStatusStyle, statusStyle } from "./status.js";
+import { routeStatusStyle, statusStyle } from "/logistics-tracking-site/Public/js/status.js";
 
 
 async function getVehicles() {
-  const res = await fetch("./../../Database/vehicles.json");
+  const res = await fetch("/logistics-tracking-site/Database/vehicles.json");
   return await res.json();
 }
 
 async function getLocations() {
-  const res = await fetch("./../../Database/locations.json");
+  const res = await fetch("/logistics-tracking-site/Database/locations.json");
   return await res.json();
 }
 
 async function getRoutes() {
-  const res = await fetch("./../../Database/routes.json");
+  const res = await fetch("/logistics-tracking-site/Database/routes.json");
   return await res.json();
 }
 
 async function getParcels() {
-  const res = await fetch("./../../Database/parcels.json");
+  const res = await fetch("/logistics-tracking-site/Database/parcels.json");
   return await res.json();
 }
 
@@ -26,7 +26,7 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("empName");
   localStorage.removeItem("empRole");
   localStorage.removeItem("empId");
-  window.location.href = "/Views/sign-in.html";
+  window.location.href = "/logistics-tracking-site/Views/sign-in.html";
 });
 
 const routeForm = document.querySelector(".route-form");

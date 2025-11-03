@@ -3,11 +3,11 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("empName");
   localStorage.removeItem("empRole");
   localStorage.removeItem("empId");
-  window.location.href = "/Views/sign-in.html";
+  window.location.href = "/logistics-tracking-site/Views/sign-in.html";
 });
 
 async function getParcelRoutes() {
-  const res = await fetch("./../../Database/parcel_routes.json");
+  const res = await fetch("/logistics-tracking-site/Database/parcel_routes.json");
   return await res.json();
 }
 
