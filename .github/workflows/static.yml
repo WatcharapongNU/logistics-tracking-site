@@ -35,11 +35,7 @@ jobs:
       - name: Upload static files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            index.html
-            Public
-            Views
-            Database
+          path: index.html,Public,Views,Database
 
       - name: Deploy to GitHub Pages
         id: deployment
